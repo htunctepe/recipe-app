@@ -8,4 +8,120 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 } 
+
+img {
+    max-width: 100%;
+}
+.mobile-container {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 2px #3333331A;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 400px;
+    background-color: #FFFFFF;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header input {
+    background-color: #eee;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.fav-container {
+    background-color: thistle;
+    text-align: center;
+    padding: 1rem;
+}
+
+.fav-meals {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.fav-meals li {
+    margin: 5px;
+    width: 75px;
+}
+
+.fav-meals li img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #3333331A;
+    object-fit: cover;
+    border: 2px solid #FFFFFF1A;
+    height: 70px;
+    width: 70px;
+}
+
+.fav-meals li span {
+    font-size: 0.8rem;
+}
+
+.meal {
+    border-radius: 3px;
+    box-shadow: 0 0 10px 2px #3333331A;
+    margin: 1.5rem;
+}
+
+.meal-header {
+    position: relative;
+}
+
+.meal-header .random {
+    position: absolute;
+    top: 1rem;
+    background-color: #FFFFFF;
+    padding: 0.5rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.meal-header img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.meal-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.meal-body h4 {
+    margin: 0; 
+}
+
+.meal-body button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
